@@ -11,7 +11,7 @@ gulp.task('babelify', function() {
 		.pipe(gulp.dest('dist'));
 });
 
-gulp.task('uglify', ["babelify"], function() {
+gulp.task('uglify', function() {
 	console.log("******* Comprimiendo 'dist/sugar.console.js'");
 	return gulp.src('dist/sugar.console.js')
 		.pipe(uglify())
