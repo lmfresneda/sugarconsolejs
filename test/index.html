@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Visual Test SugarConsole.js</title>
+	<script type="text/javascript" src="../dist/sugar.console.min.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+	console.testlog();
+	console.logo();
+	console.now();
+	console.object("Log normal con object", {n: "n"});
+	console.xinfo("Probando cuadro nuevo de info");
+	console.xwarn("Probando cuadro de warning");
+	console.xdebug("Probando cuadro de debug");
+	console.quote("Probando cuadro de quote");
+	console.xlog("Probando log grande de 2em", 2);
+	console.xinfo("Probando separador por defecto");
+	console.separator();
+	console.xinfo("Probando separador con size 1.5");
+	console.separator(1.5);
+	console.sugar("Texto con sugar");
+	console.xinfo("Marcando pasos 1 al 5");
+	console.step();
+	console.step();
+	console.step();
+	console.step();
+	console.step();
+	console.xinfo("Reseteo de pasos y marcando 1 al 3");
+	console.stepWithReset();
+	console.step();
+	console.step();
+	console.now();
+	setTimeout(function () {
+	console.now();
+		console.xinfo("He esperado mas de 5 segundos para nuevos pasos sin resetearlos, pero deberia empezar de nuevo");
+		console.step();
+		console.step();
+		console.step();
+		setTimeout(function () {
+			console.xinfo("He esperado mas de 5 segundos para nuevos pasos sin resetearlos, pero indicando no reset, deberia continuar en 4");
+			console.xinfo("Ademas llamo a step(false) y stepNoReset() indistintamente");
+			console.step(false);
+			console.stepNoReset();
+			console.stepNoReset();
+		}, 6000);
+	}, 6000);
+	console.xerror("Probando cuadro de errores");
+	console.xerror("Probando errores con un objeto", {error: "Generic error"});
+
+	console.strong("Probando strong");
+	console.italic("Probando italic");
+</script>
+</body>
+</html>
