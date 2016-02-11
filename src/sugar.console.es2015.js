@@ -76,7 +76,7 @@
 		separator(fontSize = 1){
 			console.log(""); 
 			console.log(`%c____________________________________________________________________________________`, 
-						`color: black; font-weight: bold; font-size: ${fontSize}em`);
+				`color: black; font-weight: bold; font-size: ${fontSize}em`);
 			console.log("");
 		},
 
@@ -104,9 +104,9 @@
 		 */
 		xinfo(msg = "Empty Info text", infoObject = ""){
 			console.log(`%ci%cINFO: ${msg}`, 
-						`background-color: #006AFA; color: white; border-radius: 100%; padding: 1px 5px; margin-right: 5px;`,  /*styles for symbol*/
-						`color: #5B5959; background-color: #C8F5FD; padding: 1px 2px; border-radius: 2px`, /*styles for message*/
-						infoObject);  
+				`background-color: #006AFA; color: white; border-radius: 100%; padding: 1px 5px; margin-right: 5px;`,  /*styles for symbol*/
+				`color: #5B5959; background-color: #C8F5FD; padding: 1px 2px; border-radius: 2px`, /*styles for message*/
+				infoObject);  
 		},
 
 		/**
@@ -118,9 +118,9 @@
 		 */
 		xerror(msg = "Empty Error text", errorObject = ""){
 			console.log(`%cX%cERROR: ${msg}`, 
-						`background-color: #EC1A1A; color: white; border-radius: 100%; padding: 1px 5px; margin-right: 5px;`,    /*styles for symbol*/
-						`color: #2F2F2F; background-color: #FFC4C4; padding: 1px 2px; border-radius: 2px`, /*styles for message*/
-						errorObject);  
+				`background-color: #EC1A1A; color: white; border-radius: 100%; padding: 1px 5px; margin-right: 5px;`,    /*styles for symbol*/
+				`color: #2F2F2F; background-color: #FFC4C4; padding: 1px 2px; border-radius: 2px`, /*styles for message*/
+				errorObject);  
 		},
 
 		/**
@@ -132,9 +132,9 @@
 		 */
 		xwarn(msg = "Empty Warning text", warnObject = ""){
 			console.log(`%c!%cWARN: ${msg}`, 
-						`background-color: #F0DC00; border-radius: 100%; padding: 1px 5px; margin-right: 5px; font-weight: bold`, /*styles for symbol*/
-						`color: #2F2F2F; background-color: #FDFCC3; padding: 1px 2px; border-radius: 2px`, /*styles for message*/
-						warnObject);  
+				`background-color: #F0DC00; border-radius: 100%; padding: 1px 5px; margin-right: 5px; font-weight: bold`, /*styles for symbol*/
+				`color: #2F2F2F; background-color: #FDFCC3; padding: 1px 2px; border-radius: 2px`, /*styles for message*/
+				warnObject);  
 		},
 
 		/**
@@ -146,9 +146,9 @@
 		 */
 		xdebug(msg = "Empty Debug text", debugObject = ""){
 			console.log(`%c<>%cDEBUG: ${msg}`, 
-						`background-color: #777777; color: white; border-radius: 100%; padding: 2px 3px 3px 3px; margin-right: 5px`, /*styles for symbol*/
-						`color: #2F2F2F; background-color: #E5E5E5; padding: 1px 2px; border-radius: 2px`, /*styles for message*/
-						debugObject);  
+				`background-color: #777777; color: white; border-radius: 100%; padding: 2px 3px 3px 3px; margin-right: 5px`, /*styles for symbol*/
+				`color: #2F2F2F; background-color: #E5E5E5; padding: 1px 2px; border-radius: 2px`, /*styles for message*/
+				debugObject);  
 		},
 
 		/**
@@ -161,7 +161,7 @@
 		 */
 		xlog(msg = "Empty Log text", fontSize = 1.2, fontFamily = this.__private._fontFamilyLog){
 			console.log(`%c${msg}`, 
-						`font-size: ${fontSize}em; font-family: ${fontFamily}`);
+				`font-size: ${fontSize}em; font-family: ${fontFamily}`);
 		},
 
 		/**
@@ -179,7 +179,7 @@
 		 */
 		strong(msg = "Empty bold text", fontSize = 1.2){
 			console.log(`%c${msg}`, 
-						`font-weight: bold; font-size: ${fontSize}em`);
+				`font-weight: bold; font-size: ${fontSize}em`);
 		},
 
 		/**
@@ -191,7 +191,7 @@
 		 */
 		italic(msg = "Empty italic text", fontSize = 1.2){
 			console.log(`%c${msg}`, 
-						`font-style: italic; font-size: ${fontSize}em`);
+				`font-style: italic; font-size: ${fontSize}em`);
 		},
 
 		/**
@@ -203,7 +203,7 @@
 		 */
 		quote(msg = "Empty quote text", fontSize = 1.2){
 			console.log(`%c${msg}`, 
-						`font-style: italic; font-size: ${fontSize}em; border-left: 5px solid #A2A2A2; color: #B8B8B8; padding: 2px 0px 2px 5px; margin-left: 20px;`);
+				`font-style: italic; font-size: ${fontSize}em; border-left: 5px solid #A2A2A2; color: #B8B8B8; padding: 2px 0px 2px 5px; margin-left: 20px;`);
 		},
 
 		/**
@@ -221,10 +221,10 @@
 			const diff = nDiff.getTime() - this.__private._dif.getTime();
 			console.log("");
 			console.log(`%c>>> NOW -> ${nDiff.toString()} <<<`, 
-						`font-size: ${fontSize}em; color: blue; margin-left: 20px;`);
+				`font-size: ${fontSize}em; color: blue; margin-left: 20px;`);
 			if(printDiff){
 				console.log(`%c(Difference ${diff}ms)`, 
-							`font-size: ${fontSize - 0.2}em; color: blue; margin-left: 50px;`);
+					`font-size: ${fontSize - 0.2}em; color: blue; margin-left: 50px;`);
 			}
 			console.log("");
 			this.__private._dif = nDiff;
@@ -253,8 +253,8 @@
 				this.resetSteps();
 			}
 			console.log(`%c${this.__private._steps+1}%c Step!`, 
-						`border: 1px solid black; padding: 1px 5px; border-radius: 100%`, /*styles for number step*/
-						`border: 0; padding: 0; border-radius: 0`						  /*styles for string step*/
+				`border: 1px solid black; padding: 1px 5px; border-radius: 100%`, /*styles for number step*/
+				`border: 0; padding: 0; border-radius: 0`						  /*styles for string step*/
 						);
 			this.__private._steps += 1;
 			this.__private._timeStep = new Date();
