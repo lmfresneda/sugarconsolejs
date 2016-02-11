@@ -212,7 +212,7 @@
 		 * @param  {Number} [fontSize=1.2] Opcional, indicamos el font-size que se usará
 		 * @method now
 		 */
-		now(fontSize = 1.2){
+		now(fontSize = 1.2){ 
 			let printDiff = !(this.__private._dif == null);
 			if(this.__private._dif == null) {
 				this.__private._dif = new Date();

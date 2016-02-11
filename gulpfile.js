@@ -11,10 +11,9 @@ gulp.task('babelify', function() {
 		.pipe(gulp.dest('dist'));
 });
 
-gulp.task('uglify', function() {
-	console.log("******* Comprimiendo y babelizando 'src/sugar.console.es2015.js'");
-	return gulp.src('src/sugar.console.es2015.js')
-		.pipe(babel())
+gulp.task('uglify', ["babelify"], function() {
+	console.log("******* Comprimiendo 'dist/sugar.console.js'");
+	return gulp.src('dist/sugar.console.js')
 		.pipe(uglify())
 		.pipe(rename("sugar.console.min.js"))
 		.pipe(gulp.dest('dist'));
