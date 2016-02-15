@@ -14,7 +14,7 @@ Las extensiones se pueden usar directamente desde le objeto global `console` o h
 
 ##API
 
-###.separator([size = 80, fontSize = 1])
+###.separator(*[size = 80, fontSize = 1]*)
 
 Pinta una línea separadora.
 
@@ -24,7 +24,7 @@ Le podemos indicar que sea menos o más larga mediante el parámetro `size` y el
 
 ![console.separator](img/console_separator2.jpg)
 
-###.sugar(msg [, fontSize = 1.2])
+###.sugar(msg *[, fontSize = 1.2]*)
 
 Pinta el texto pasado de una forma azucarada.
 
@@ -34,7 +34,7 @@ Mediante el parámetro opcional `fontSize` podemos hacer el texto más o menos g
 
 ![console.sugar](img/console_sugar2.jpg)
 
-###.xinfo([msg = "Empty Info text", infoObject = ""])
+###.xinfo(*[msg = "Empty Info text", infoObject = ""]*)
 
 Pinta un texto de INFO
 
@@ -44,7 +44,7 @@ Podemos pasarle opcionalmente un objeto que será logueado posterior al texto, e
 
 ![console.xinfo](img/console_xinfo2.jpg)
 
-###.xerror([msg = "Empty Error text", errorObject = ""])
+###.xerror(*[msg = "Empty Error text", errorObject = ""]*)
 
 Pinta un texto de ERROR
 
@@ -54,7 +54,7 @@ Podemos pasarle opcionalmente un objeto que será logueado posterior al texto, e
 
 ![console.xerror](img/console_xerror2.jpg)
 
-###.xwarn([msg = "Empty Warning text", warnObject = ""])
+###.xwarn(*[msg = "Empty Warning text", warnObject = ""]*)
 
 Pinta un texto de WARNING
 
@@ -64,7 +64,7 @@ Podemos pasarle opcionalmente un objeto que será logueado posterior al texto, e
 
 ![console.xwarn](img/console_xwarn2.jpg)
 
-###.xdebug([msg = "Empty Debug text", debugObject = ""])
+###.xdebug(*[msg = "Empty Debug text", debugObject = ""]*)
 
 Pinta un texto de DEBUG
 
@@ -74,7 +74,7 @@ Podemos pasarle opcionalmente un objeto que será logueado posterior al texto, e
 
 ![console.xdebug](img/console_xdebug2.jpg)
 
-###.xlog([msg = "Empty Log text", fontSize = 1.2, fontFamily = "Arial"])
+###.xlog(*[msg = "Empty Log text", fontSize = 1.2, fontFamily = "Arial"]*)
 
 Pinta un texto de log simple.
 
@@ -92,7 +92,7 @@ Con este método podemos cambiar la tipografía por defecto a la hora de hacer c
 
 Es console.log
 
-###.strong([msg = "Empty bold text", fontSize = 1.2])
+###.strong(*[msg = "Empty bold text", fontSize = 1.2]*)
 
 Pinta un texto resaltado en negrita.
 
@@ -100,7 +100,7 @@ Pinta un texto resaltado en negrita.
 
 Opcionalmente podemos indicarle el tamaño de letra mediante el parámetro `fontSize`.
 
-###.italic([msg = "Empty italic text", fontSize = 1.2])
+###.italic(*[msg = "Empty italic text", fontSize = 1.2]*)
 
 Pinta un texto en itálica.
 
@@ -108,7 +108,7 @@ Pinta un texto en itálica.
 
 Opcionalmente podemos indicarle el tamaño de letra mediante el parámetro `fontSize`.
 
-###.quote([msg = "Empty quote text", fontSize = 1.2])
+###.quote(*[msg = "Empty quote text", fontSize = 1.2]*)
 
 Pinta un texto citado (quote).
 
@@ -116,7 +116,7 @@ Pinta un texto citado (quote).
 
 Opcionalmente podemos indicarle el tamaño de letra mediante el parámetro `fontSize`.
 
-###.now([fontSize = 1.2])
+###.now(*[fontSize = 1.2]*)
 
 Pinta la fecha actual. Si se ha llamado anteriormente a este método, se pintará también la diferencia con la anterior fecha en milisegundos.
 
@@ -124,7 +124,7 @@ Pinta la fecha actual. Si se ha llamado anteriormente a este método, se pintar�
 
 ![console.now](img/console_now2.jpg)
 
-###.step([reset = true])
+###.step(*[reset = true]*)
 
 Con éste método podemos pintar pasos (los típicos "Por aquí paso" de una forma un poco más elegante. Este método concretamente pinta el siguiente paso. Le podemos indicar si resetea los pasos o no.
 
