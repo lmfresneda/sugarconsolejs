@@ -80,17 +80,22 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 		/**
    * Pinta una línea separadora
    * 
+   * @param  {Number} [size=80] Opcional, largo de la línea separadora, formada por [size] veces el caracter '_', por defecto 80.
    * @param  {Number} [fontSize=1] Opcional, indicamos el font-size que se usará para la línea
    * @method separator
    */
 		separator: function separator() {
-			var fontSize = arguments.length <= 0 || arguments[0] === undefined ? 1 : arguments[0];
+			var size = arguments.length <= 0 || arguments[0] === undefined ? 80 : arguments[0];
+			var fontSize = arguments.length <= 1 || arguments[1] === undefined ? 1 : arguments[1];
 
 			console.log("");
 			var line = "";
-			for (var i = 0; i < 80; i++) {
-				line += "_";
-			}console.log("%c" + line, "color: black; font-weight: bold; font-size: " + fontSize + "em");
+			Array.from(new Array(size), function (x, i) {
+				return i;
+			}).forEach(function (x) {
+				return line += "_";
+			});
+			console.log("%c" + line, "color: black; font-weight: bold; font-size: " + fontSize + "em");
 			console.log("");
 		},
 

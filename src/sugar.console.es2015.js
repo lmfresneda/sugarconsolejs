@@ -70,13 +70,14 @@
 		/**
 		 * Pinta una línea separadora
 		 * 
+		 * @param  {Number} [size=80] Opcional, largo de la línea separadora, formada por [size] veces el caracter '_', por defecto 80.
 		 * @param  {Number} [fontSize=1] Opcional, indicamos el font-size que se usará para la línea
 		 * @method separator
 		 */
-		separator(fontSize = 1){
+		separator(size = 80, fontSize = 1){
 			console.log(""); 
 			let line = "";
-			for (var i = 0; i < 80; i++) line += "_";
+			Array.from(new Array(size), (x,i) => i).forEach(x => line += "_");
 			console.log(`%c${line}`, 
 				`color: black; font-weight: bold; font-size: ${fontSize}em`);
 			console.log("");
