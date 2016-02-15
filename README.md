@@ -167,7 +167,7 @@ También podemos encontrar cosas sin ninguna importancia y/o que no sirven para 
 
 Método para testear que ha funcionado la extensión:
 
-![console.testlog](img/console_testlog.jpg)
+![console.testlog](img/console_testLog.jpg)
 
 ###.logo()
 
