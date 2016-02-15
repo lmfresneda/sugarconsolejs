@@ -77,7 +77,8 @@
 		separator(size = 80, fontSize = 1){
 			console.log(""); 
 			let line = "";
-			Array.from(new Array(size), (x,i) => i).forEach(x => line += "_");
+			//para evitar polyfills (Array.from y/o Array.fill), bucle for de siempre
+			for (var i = 0; i < size; i++) { line += "_"; }
 			console.log(`%c${line}`, 
 				`color: black; font-weight: bold; font-size: ${fontSize}em`);
 			console.log("");

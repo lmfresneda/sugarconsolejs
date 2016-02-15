@@ -90,11 +90,10 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 			console.log("");
 			var line = "";
-			Array.from(new Array(size), function (x, i) {
-				return i;
-			}).forEach(function (x) {
-				return line += "_";
-			});
+			//para evitar polyfills (Array.from y/o Array.fill), bucle for de siempre
+			for (var i = 0; i < size; i++) {
+				line += "_";
+			}
 			console.log("%c" + line, "color: black; font-weight: bold; font-size: " + fontSize + "em");
 			console.log("");
 		},
