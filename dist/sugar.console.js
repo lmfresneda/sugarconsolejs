@@ -87,7 +87,10 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 			var fontSize = arguments.length <= 0 || arguments[0] === undefined ? 1 : arguments[0];
 
 			console.log("");
-			console.log("%c____________________________________________________________________________________", "color: black; font-weight: bold; font-size: " + fontSize + "em");
+			var line = "";
+			for (var i = 0; i < 80; i++) {
+				line += "_";
+			}console.log("%c" + line, "color: black; font-weight: bold; font-size: " + fontSize + "em");
 			console.log("");
 		},
 

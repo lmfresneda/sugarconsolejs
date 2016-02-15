@@ -75,7 +75,9 @@
 		 */
 		separator(fontSize = 1){
 			console.log(""); 
-			console.log(`%c____________________________________________________________________________________`, 
+			let line = "";
+			for (var i = 0; i < 80; i++) line += "_";
+			console.log(`%c${line}`, 
 				`color: black; font-weight: bold; font-size: ${fontSize}em`);
 			console.log("");
 		},
