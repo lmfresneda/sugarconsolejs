@@ -4,23 +4,23 @@ const rename = require("gulp-rename");
 const uglify = require("gulp-uglify");
  
 gulp.task('babelify', function() {
-	console.log("******* Babelizando 'src/sugar.console.es2015.js'");
-	return gulp.src('src/sugar.console.es2015.js')
+	console.log("******* Babelizando 'src/sugarconsole.js'");
+	return gulp.src('src/sugarconsole.js')
 		.pipe(babel())
-		.pipe(rename("sugar.console.js"))
+		.pipe(rename("sugarconsole.js"))
 		.pipe(gulp.dest('dist'));
 });
 
 gulp.task('uglify', function() {
-	console.log("******* Comprimiendo 'dist/sugar.console.js'");
-	return gulp.src('dist/sugar.console.js')
+	console.log("******* Comprimiendo 'dist/sugarconsole.js'");
+	return gulp.src('dist/sugarconsole.js')
 		.pipe(uglify())
-		.pipe(rename("sugar.console.min.js"))
+		.pipe(rename("sugarconsole.min.js"))
 		.pipe(gulp.dest('dist'));
 });
 
 
 gulp.task("default", function() {
-	console.log("******* Escuchando cambios en 'src/sugar.console.es2015.js'");
-	gulp.watch('src/sugar.console.es2015.js', ['babelify', "uglify"]);
+	console.log("******* Escuchando cambios en 'src/sugarconsole.js'");
+	gulp.watch('src/sugarconsole.js', ['babelify', "uglify"]);
 });

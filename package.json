@@ -1,17 +1,31 @@
 {
-  "name": "sugar.console.js",
-  "version": "0.0.1",
+  "name": "sugarconsole",
+  "version": "1.0.0",
   "description": "Sugar functions for console object",
-  "main": "dist/sugar.console.js",
+  "main": "dist/sugarconsole.js",
   "scripts": {},
+  "bugs": "https://github.com/lmfresneda/sugarconsolejs/issues",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lmfresneda/sugarconsolejs.git"
+  },
   "keywords": [
     "console",
     "log",
     "js",
-    "javascript"
+    "javascript",
+    "sugarconsole",
+    "sugarconsoleJS",
+    "sugar.console.JS"
   ],
   "author": "lmiguelfresneda@gmail.com",
-  "license": "ISC",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/mit-license.php"
+    }
+  ],
+  "readmeFilename": "README.md",
   "devDependencies": {
     "babel-core": "^6.5.1",
     "babel-plugin-transform-object-assign": "^6.5.0",

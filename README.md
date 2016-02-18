@@ -1,13 +1,13 @@
-#sugar.console.js
+#sugarconsolejs
 
 Una simple colección de extensiones al objeto console para darle un poco de azúcar
 
 ##Cómo empezar
 
-Referenciar en nuestra página la utilidad `sugar.console.min.js`
+Referenciar en nuestra página la utilidad `sugarconsole.min.js`
 
 ```html
-	<script type="text/javascript" src="sugar.console.min.js"></script>
+	<script type="text/javascript" src="sugarconsole.min.js"></script>
 ```
 
 Las extensiones se pueden usar directamente desde le objeto global `console` o haciendo uso de la clase `SugarConsole` disponible
