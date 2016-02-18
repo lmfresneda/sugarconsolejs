@@ -14,7 +14,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
  */
 /* global define */
 ;(function (define) {
-	define(function () {
+	define([], function () {
 		return function () {
 
 			/**
@@ -341,7 +341,6 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 				}
 			};
 			//extendemos las propiedades al objeto global console
-			_extends(console, sugarconsole);
 
 			return sugarconsole;
 		}();
@@ -352,5 +351,6 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 		module.exports = factory();
 	} else {
 		window.sugarconsole = factory();
+		_extends(console, sugarconsole);
 	}
 });

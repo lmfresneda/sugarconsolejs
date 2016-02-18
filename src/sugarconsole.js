@@ -10,7 +10,7 @@
  */
 /* global define */
 ; (function (define) {
-    define(function () {
+    define([], function () {
         return (function () {
 
 			/**
@@ -294,7 +294,6 @@
 				}
 			}
 			//extendemos las propiedades al objeto global console
-		 	Object.assign(console, sugarconsole); 
 
 		 	return sugarconsole;
 
@@ -306,6 +305,7 @@
         module.exports = factory();
     } else {
         window.sugarconsole = factory();
+	 	Object.assign(console, sugarconsole); 
     }
 }));
  
