@@ -2,15 +2,29 @@
 
 Una simple colección de extensiones al objeto console para darle un poco de azúcar
 
-##Cómo empezar
+##Cómo Usar
 
-Referenciar en nuestra página la utilidad `sugarconsole.min.js`
+###npm
+
+`npm install sugarconsole --save-dev`
+
+###bower
+
+`bower install sugarconsole --save`
+
+###[Descargar proyecto](https://github.com/lmfresneda/sugarconsolejs/archive/master.zip "Descargar proyecto")
+
+Referenciar en nuestra página el script 
 
 ```html
-	<script type="text/javascript" src="sugarconsole.min.js"></script>
+	<script type="text/javascript" src="dist/sugarconsole.min.js"></script>
 ```
 
-Las extensiones se pueden usar directamente desde le objeto global `console` o haciendo uso de la clase `SugarConsole` disponible
+Las extensiones se pueden usar directamente desde le objeto global `console` o haciendo uso de la clase `sugarconsole` disponible.
+
+##Requerimientos
+
+SugarConsole.js es zero dependencies. Tan solo es necesario que existe el objeto global `console`.
 
 ##API
 
