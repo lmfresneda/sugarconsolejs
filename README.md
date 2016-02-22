@@ -1,7 +1,5 @@
 #sugarconsolejs
 
-[![Build Status](https://travis-ci.org/lmfresneda/sugarconsolejs.svg?branch=master)](https://travis-ci.org/lmfresneda/sugarconsolejs)
-
 Una simple colección de extensiones al objeto console para darle un poco de azúcar
 
 ##Cómo Usar
