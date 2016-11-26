@@ -1,6 +1,6 @@
 {
   "name": "sugarconsole",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Sugar functions for console object",
   "main": "dist/sugarconsole.js",
   "scripts": {
