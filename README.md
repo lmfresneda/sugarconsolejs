@@ -1,8 +1,8 @@
 #sugarconsolejs
 
-Una simple colección de extensiones al objeto console para darle un poco de azúcar
+A simple collection of extensions to the console object to give you some sugar
 
-##Cómo Usar
+##How to use
 
 ###npm
 
@@ -12,127 +12,127 @@ Una simple colección de extensiones al objeto console para darle un poco de az�
 
 `bower install sugarconsole --save`
 
-###[Descargar proyecto](https://github.com/lmfresneda/sugarconsolejs/archive/master.zip "Descargar proyecto")
+###[Download project](https://github.com/lmfresneda/sugarconsolejs/archive/master.zip "Download project")
 
-Referenciar en nuestra página el script 
+Menction our webpage at the script 
 
 ```html
 	<script type="text/javascript" src="dist/sugarconsole.min.js"></script>
 ```
 
-Las extensiones se pueden usar directamente desde le objeto global `console` o haciendo uso de la clase `sugarconsole` disponible.
+Extensions can be used directly from the global `console` object or by using the available `sugarconsole` class.
 
-##Requerimientos
+##Requirements
 
-SugarConsole.js es zero dependencies. Tan solo es necesario que existe el objeto global `console`.
+SugarConsole.js is zero dependencies. It is only necessary that the global object `console` exists.
 
 ##API
 
 ###.separator(*[size = 80, fontSize = 1]*)
 
-Pinta una línea separadora.
+Paint a line separator.
 
 ![console.separator](img/console_separator.jpg)
 
-Le podemos indicar que sea menos o más larga mediante el parámetro `size` y el espesor de esta mediante el parámetro `fontSize`, ejemplo:
+We can indicate that it is shorter or longer using the `size` parameter and its thickness using the `fontSize` parameter, eg:
 
 ![console.separator](img/console_separator2.jpg)
 
 ###.sugar(msg *[, fontSize = 1.2]*)
 
-Pinta el texto pasado de una forma azucarada.
+Paint the text in a sugary way.
 
 ![console.sugar](img/console_sugar.jpg)
 
-Mediante el parámetro opcional `fontSize` podemos hacer el texto más o menos grande, ejemplo:
+Using the optional parameter `fontSize` we can make the text more or less large, eg:
 
 ![console.sugar](img/console_sugar2.jpg)
 
 ###.xinfo(*[msg = "Empty Info text", infoObject = ""]*)
 
-Pinta un texto de INFO
+Paint an INFO text
 
 ![console.xinfo](img/console_xinfo.jpg)
 
-Podemos pasarle opcionalmente un objeto que será logueado posterior al texto, ejemplo:
+We can optionally pass you an object that will be logged after the text, eg:
 
 ![console.xinfo](img/console_xinfo2.jpg)
 
 ###.xerror(*[msg = "Empty Error text", errorObject = ""]*)
 
-Pinta un texto de ERROR
+Paint an ERROR text
 
 ![console.xerror](img/console_xerror.jpg)
 
-Podemos pasarle opcionalmente un objeto que será logueado posterior al texto, ejemplo:
+We can optionally pass you an object that will be logged after the text, eg:
 
 ![console.xerror](img/console_xerror2.jpg)
 
 ###.xwarn(*[msg = "Empty Warning text", warnObject = ""]*)
 
-Pinta un texto de WARNING
+Paint a WARNING text 
 
 ![console.xwarn](img/console_xwarn.jpg)
 
-Podemos pasarle opcionalmente un objeto que será logueado posterior al texto, ejemplo:
+We can optionally pass you an object that will be logged after the text, eg:
 
 ![console.xwarn](img/console_xwarn2.jpg)
 
 ###.xdebug(*[msg = "Empty Debug text", debugObject = ""]*)
 
-Pinta un texto de DEBUG
+Paint a DEBUG text
 
 ![console.xdebug](img/console_xdebug.jpg)
 
-Podemos pasarle opcionalmente un objeto que será logueado posterior al texto, ejemplo:
+We can optionally pass you an object that will be logged after the text, eg:
 
 ![console.xdebug](img/console_xdebug2.jpg)
 
 ###.xlog(*[msg = "Empty Log text", fontSize = 1.2, fontFamily = "Arial"]*)
 
-Pinta un texto de log simple.
+Paint a simple log text.
 
 ![console.xlog](img/console_xlog.jpg)
 
-Opcionalmente podemos indicarle el tamaño de letra y la tipografía, por ejemplo:
+Optionally we can indicate the font size and typography, eg:
 
 ![console.xlog](img/console_xlog2.jpg)
 
 ###.fontFamily(font)
 
-Con este método podemos cambiar la tipografía por defecto a la hora de hacer console.xlog
+With this method we can change the default typography when doing console.xlog
 
 ###.object(...)
 
-Es console.log
+Is console.log
 
 ###.strong(*[msg = "Empty bold text", fontSize = 1.2]*)
 
-Pinta un texto resaltado en negrita.
+Paint a bold text.
 
 ![console.strong](img/console_strong.jpg)
 
-Opcionalmente podemos indicarle el tamaño de letra mediante el parámetro `fontSize`.
+Optionally we can indicate the font size using the parameter `fontSize`.
 
 ###.italic(*[msg = "Empty italic text", fontSize = 1.2]*)
 
-Pinta un texto en itálica.
+Paint an italic text.
 
 ![console.italic](img/console_italic.jpg)
 
-Opcionalmente podemos indicarle el tamaño de letra mediante el parámetro `fontSize`.
+Optionally we can indicate the font size using the parameter `fontSize`.
 
 ###.quote(*[msg = "Empty quote text", fontSize = 1.2]*)
 
-Pinta un texto citado (quote).
+Paint a quoted text.
 
 ![console.quote](img/console_quote.jpg)
 
-Opcionalmente podemos indicarle el tamaño de letra mediante el parámetro `fontSize`.
+Optionally we can indicate the font size using the parameter `fontSize`.
 
 ###.now(*[fontSize = 1.2]*)
 
-Pinta la fecha actual. Si se ha llamado anteriormente a este método, se pintará también la diferencia con la anterior fecha en milisegundos.
+Paint the current date. If this method was previously called, the difference with the previous date in milliseconds will also be painted.
 
 ![console.now](img/console_now.jpg)
 
@@ -140,7 +140,7 @@ Pinta la fecha actual. Si se ha llamado anteriormente a este método, se pintar�
 
 ###.step(*[reset = true]*)
 
-Con éste método podemos pintar pasos (los típicos "Por aquí paso" de una forma un poco más elegante. Este método concretamente pinta el siguiente paso. Le podemos indicar si resetea los pasos o no.
+With this method we can paint steps (the typical "Here step" in a slightly more elegant way.This method concretely paints the next step.We can indicate if you reset the steps or not.
 
 ![console.step](img/console_step1.jpg) 
 
@@ -148,25 +148,25 @@ Con éste método podemos pintar pasos (los típicos "Por aquí paso" de una for
 
 ![console.step](img/console_step3.jpg)
 
-Si pasan más de 5 segundos entre un paso y otro, automáticamente se resetean:
+If they pass more than 5 seconds between one step and another, they will automatically reset:
 
 ![console.step](img/console_step4.jpg)
 
-Pero podemos obligar a que no lo haga mediante el parámetro `reset` pasándolo como `false`:
+But we can force it not to do so using the `reset` parameter by passing it as `false`:
 
 ![console.step](img/console_step5.jpg)
 
 ###.resetSteps()
 
-Resetea los pasos
+Reset steps
 
 ###.stepNoReset()
 
-Pinta directamente el siguiente paso sin resetear aunque pasen 5 segundos. Igual que hacer `.step(false)`.
+Paint directly the next step without resetting even after 5 seconds. Same as doing `.step(false)`.
 
 ###.stepWithReset()
 
-Pinta un paso obligando a resetear. Igual que hacer:
+Paint a step by forcing it to reset. Same as doing:
 
 ```javascript
 	console.resetSteps();
@@ -175,16 +175,16 @@ Pinta un paso obligando a resetear. Igual que hacer:
 
 ##Extra
 
-También podemos encontrar cosas sin ninguna importancia y/o que no sirven para nada:
+We can also find things of no importance and/or that are of no use:
 
 ###.testlog()
 
-Método para testear que ha funcionado la extensión:
+Method to test that the extension has run:
 
 ![console.testlog](img/console_testLog.jpg)
 
 ###.logo()
 
-Este método simplemente pinta el logo de SugarConsole.js
+This method simply paints the logo of SugarConsole.js
 
 ![console.logo](img/console_logo.jpg)
