@@ -1,30 +1,28 @@
 # sugarconsolejs
 
+[![npm](https://img.shields.io/npm/v/sugarconsole.svg?style=flat-square)](https://www.npmjs.com/package/sugarconsole) [![npm](https://img.shields.io/npm/dt/sugarconsole.svg?style=flat-square)](https://www.npmjs.com/package/sugarconsole)
+
 A simple collection of extensions to the console object to give you some sugar
 
 ## How to use
 
 ### npm
 
-`npm install sugarconsole --save-dev`
+`npm install --save-dev sugarconsole`
 
-### bower
+### or [Download project](https://github.com/lmfresneda/sugarconsolejs/archive/master.zip "Download project")
 
-`bower install sugarconsole --save`
-
-### [Download project](https://github.com/lmfresneda/sugarconsolejs/archive/master.zip "Download project")
-
-Menction our webpage at the script 
+And menction our webpage at the script 
 
 ```html
 	<script type="text/javascript" src="dist/sugarconsole.min.js"></script>
 ```
 
-Extensions can be used directly from the global `console` object or by using the available `sugarconsole` class.
+sugarconsole can be used directly from the global `console` object or by using the available `sugarconsole` class.
 
 ## Requirements
 
-SugarConsole.js is zero dependencies. It is only necessary that the global object `console` exists.
+sugarconsole is zero dependencies. It is only necessary that the global object `console` exists.
 
 ## API
 
